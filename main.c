@@ -1,39 +1,47 @@
-#include "NumClass.h"
 #include <stdio.h>
+#include "NumClass.h"
+#include <math.h>
 
-int main()
-{
-    int a, b;
-    scanf("%d %d", &a, &b);
-    printf("The Armstrong numbers are: ");
-    for(int i = a; i <= b; i++)
-    {
-        if(isArmStrong(i)==true){
-            printf(" %d", i);
-        }
+int main(){
+    int num1;
+    int num2;
+    int swap;
+    scanf("%d %d",&num1,&num2);
+    if(num2>num1){
+        swap=num1;
+        num1=num2;
+        num2=swap;
     }
-    printf("\n");
-    printf("The Palindromes are: ");
-    for(int i = a; i <= b; i++)
-    {
-        if(isPalindrome(i)==true){
-            printf(" %d", i);   
+    int i;
+    int j;
+    for (i=1;i<=4;i++){
+        if(i==1){
+            printf("The Armstrong numbers are:");
         }
-    }
-    printf("\n");
-    printf("The Prime numbers are: ");
-    for(int i = a; i <= b; i++)
-    {
-        if(isPrime(i)==true){
-            printf(" %d", i);       
+        if(i==2){
+            printf("The Palindromes are:");
         }
-    }
-    printf("\n");
-    printf("The Strong numbers are: ");
-    for(int i = a; i <= b; i++)
-    {
-        if(isStrong(i)==true){
-            printf(" %d", i);
+        if(i==3){
+            printf("The Prime numbers are:");
         }
+        if(i==4){
+            printf("The Strong numbers are:");
+        }
+        for(j=num2;j<=num1;j++){
+            if(i==1 && isArmStrong(j)==1){
+                printf(" %d",j);
+            }
+            if(i==2 && isPalindrome(j)==1){
+                printf(" %d",j);
+            }
+            if(i==3 && isPrime(j)==1){
+                printf(" %d",j);
+            }
+            if(i==4 && isStrong(j)==1){
+                printf(" %d",j);
+            }
+        
+        }
+        printf("\n");
     }
 }
