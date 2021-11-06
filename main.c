@@ -10,8 +10,8 @@ int main()
     for(int i = a; i <= b; i++)
     {
         if(isArmStrong(i)==true){
-            printf("%d", i);
-            printf(" ");
+            printf("%d ", i);
+            
         }
     }
     printf("\n");
@@ -20,7 +20,7 @@ int main()
     {
         if(isPalindrome(i)==true){
             printf("%d ", i);
-            printf(" ");
+            
         }
     }
     printf("\n");
@@ -29,16 +29,15 @@ int main()
     {
         if(isPrime(i)==true){
             printf("%d ", i);
-            printf(" ");
+            
         }
     }
     printf("\n");
-    printf("The Strong numbers are:");
+    printf("The Strong numbers are: ");
     for(int i = a; i <= b; i++)
     {
         if(isStrong(i)==true){
             printf("%d ", i);
-            printf(" ");
         }
     }
     printf("\n");
