@@ -30,4 +30,5 @@ int main()
         if(isStrong(i)==true)
             printf("%d ", i);
     }
+    printf("\n");
 }
