@@ -28,7 +28,7 @@ int main(){
             printf("The Strong numbers are:");
         }
         for(j=num2;j<=num1;j++){
-            if(i==1 && isArmstrong(j)==1){
+            if(i==1 && isArmStrong(j)==1){
                 printf(" %d",j);
             }
             if(i==2 && isPalindrome(j)==1){
