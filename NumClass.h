@@ -1,3 +1,6 @@
+#ifndef _NUMCLASS_H_
+#define _NUMCLASS_H_
+
 #define true 1
 #define false 0
 /* will return if a number is Armstrong number
@@ -14,3 +17,5 @@ number. For Example: 145 is strong number
 1! + 4! + 5! = 145
 */
 int isStrong(int);
+
+#endif
