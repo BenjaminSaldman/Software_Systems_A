@@ -27,7 +27,7 @@ int isPalindrome(int num)
     return false;
 } 
 
-int isArmStrong(int num)
+int isArmstrong(int num)
 {
     int k = len(num);
     int sum = 0;

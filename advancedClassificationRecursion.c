@@ -4,7 +4,7 @@ int calc(int, int);
 int reverse(int,int);
 int pow1(int, int);
 
-int isArmStrong(int Number)
+int isArmstrong(int Number)
 {
 int Sum = 0, Times =0,Temp; 
   Temp = Number;
